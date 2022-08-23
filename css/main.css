@@ -164,7 +164,6 @@ body{
 }
 .hero{
     position: relative;
-    /* height: 50vh; */
     background-color: #49BCF1;
     background-image: url("../images/header-bg.jpg");
     background-repeat: no-repeat;
@@ -256,30 +255,39 @@ body{
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #24303E;
+    opacity: 0.5;
 }
 .brand__item-text__link::after{
     position: absolute;
     bottom: 0;
     left: -12px;
+    z-index: -1;
     content: '';
     display: inline-block;
     width: 137px;
     height: 10px;
-    background-image: url("../images/learin-more.png");
+    background-image: url("../images/linkone.svg");
     background-size: contain;
     background-repeat: no-repeat;
+}
+.brand__item-text__link:hover{
+    opacity: 1;
 }
 .brand__item-text__link-one::after{
     position: absolute;
     bottom: 0;
     left: -12px;
+    z-index: -1;
     content: '';
     display: inline-block;
     width: 137px;
     height: 10px;
-    background-image: url("../images/learin-more-one.png");
+    background-image: url("../images/linktwo.svg");
     background-size: contain;
     background-repeat: no-repeat;
+}
+.brand__item-text__link-one:hover{
+    opacity: 1;
 }
 .brand__item-img-chery {
     padding-bottom: 59px;
